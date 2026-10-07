@@ -5,7 +5,7 @@ function renderProductos(lista) {
         <li class="main-product-article">
           <a class="product-link" href="./productview.html?id=${producto.id}">
             <div class="product-image-wrap">
-              <img class="product-image" src="${producto.imagen}" alt="${producto.nombre}" loading="lazy" />
+              <img class="product-image" src="${producto.imagen}" alt="${producto.nombre}" loading="lazy" decoding="async" />
               <span class="product-number" aria-hidden="true">${String(indice + 1).padStart(2, "0")}</span>
             </div>
             <div class="product-info">

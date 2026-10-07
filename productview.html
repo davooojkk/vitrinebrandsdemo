@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitrine Brands · Colección</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/productos/productos.js" defer></script>
     <script src="./js/productos/renderproducto.js" defer></script>
     <script src="./js/main.js" defer></script>
@@ -27,7 +31,7 @@
       <div class="producto-gallery">
         <a class="text-link" href="./index.html#productos">← Volver a la colección</a>
         <ul class="producto-imgs">
-          <li><img class="producto-imagen" alt="" /></li>
+          <li><img class="producto-imagen" alt="" fetchpriority="high" decoding="async" /></li>
         </ul>
         <p class="producto-caption">Original Brands Only · Vitrine Brands</p>
       </div>
@@ -46,19 +50,31 @@
 
     <footer class="footer">
       <div class="footer-inner container">
-        <div>
+        <div class="footer-brand">
           <a class="footer-logo" href="./index.html" aria-label="Volver al inicio">
             <img src="./img/icons/VITRINE%20BRANDS.svg" alt="Vitrine Brands" />
           </a>
           <p class="footer-tagline">Original Brands Only</p>
         </div>
-        <ul class="menu-footer">
-          <li><a href="./index.html#productos">Colección</a></li>
-          <li><a href="./index.html#local">El local</a></li>
-          <li><a href="./index.html#info">Información</a></li>
-        </ul>
-        <p class="footer-copy">Vitrine Brands<br />Chuy, Uruguay · Desde 2020</p>
+        <div>
+          <p class="footer-column-title">Navegación</p>
+          <ul class="menu-footer">
+            <li><a href="./index.html#productos">Colección</a></li>
+            <li><a href="./index.html#marcas">Marcas</a></li>
+            <li><a href="./index.html#local">El local</a></li>
+            <li><a href="./index.html#info">Información</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-column-title">Información</p>
+          <p class="footer-address">Chuy, Uruguay<br />Lun — Vie<br />08:00 — 18:00 h</p>
+        </div>
+        <div>
+          <p class="footer-column-title">La selección</p>
+          <p class="footer-copy">Adidas, New Era, WATS y más.<br />Pesos uruguayos y reales.</p>
+        </div>
       </div>
+      <div class="footer-bottom container"><span>Vitrine Brands © 2026</span><span>Chuy, Uruguay · Desde 2020</span></div>
     </footer>
   </body>
 </html>
